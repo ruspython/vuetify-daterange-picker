@@ -76,7 +76,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text @click="reset">Reset</v-btn>
+          <v-btn text @click="reset" v-if="showReset">Reset</v-btn>
           <v-btn text @click="menu = false">Cancel</v-btn>
           <v-btn @click="applyRange" color="primary" :disabled="!bothSelected"
             >Apply</v-btn
